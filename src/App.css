@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  color: #000;
+  font-family: "Roboto", "sans-serif";
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  font-size: 32px;
+  background: #fff;
+  padding: 30px 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+.header-image {
+  display: block;
+  user-select: none;
+  width: 125px;
+  height: 125px;
+  margin: 10px auto 25px;
+  border-radius: 125px;
+}
+
+.total-money {
+  color: #fff;
+  background-color: #2ecc71;
+  background: linear-gradient(180deg, #2ecc71, #1abc9c);
+  padding: 20px;
+  margin: 10px 0;
+  font-family: "Roboto", "sans-serif";
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  top: 0;
+  position: sticky;
+  z-index: 9999;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 10px 10px;
+}
+
+.card-item {
+  max-width: 100%;
+  background-color: #fff;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 15px;
+  width: 100%;
+}
+
+.pr-image {
+  display: block;
+  margin: 15px auto;
+  height: 120px;
+  max-width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.pr-name {
+  font-family: "Roboto", "sans-serif";
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pr-price {
+  font-family: "Roboto", "sans-serif";
+  font-size: 20px;
+  color: #24c486;
+}
+
+.controls {
+  font-family: "Roboto", "sans-serif";
+  font-size: 20px;
+  font-weight: 700;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px 10px;
+  margin-top: 25px;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 12px;
+  border-radius: 3px;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.disabled {
+  background: #f1f2f6 !important;
+  border: none;
+  color: #333;
+  cursor: auto;
+  touch-action: manipulation;
+}
+
+.ctrl-sell {
+  background: linear-gradient(180deg, #f53b82, #f53b57);
+}
+.ctrl-input,
+button {
+  font-size: 16px;
+  text-align: center;
+}
+
+.ctrl-input::after {
+  content: "";
+}
+.ctrl-input {
+  padding: 9px 12px;
+  border-radius: 3px;
+  border: 1px solid #b2bec3;
+  color: #333;
+  width: 100%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
+}
+.ctrl-buy {
+  background: linear-gradient(180deg, #2ecc71, #1abc9c);
+}
+
+.receipt {
+  max-width: 100%;
+  font-size: 18px;
+  padding: 15px 15px 30px;
+  margin-top: 10px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.head-receipt {
+  font-family: "Roboto", "sans-serif";
+  font-size: 28px;
+  padding: 15px 15px 25px;
+  font-weight: 700;
+  background-color: #fff;
+  text-align: center;
+}
+
+.receipt-items {
+  font-family: "Roboto", "sans-serif";
+  max-width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: grid;
+  grid-gap: 10px 0;
+  font-size: 18px;
+  grid-template-columns: 170px 45px 75px;
+}
+
+.item-name {
+  font-family: "Roboto", "sans-serif";
+  font-weight:500;
+  text-align: left;
+  text-overflow: ellipsis;
+}
+.item-amount {
+  font-family: "Roboto", "sans-serif";
+  font-weight:500;
+  text-align: left;
+}
+.item-cost {
+  font-family: "Roboto", "sans-serif";
+  font-weight:500;
+  color: #24c486;
+  text-align: right;
+}
+
+.receipt-total {
+  word-spacing: 1px;
+  font-weight: 700;
+  max-width: 300px;
+  border-top: 1px solid #333;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding-top: 10px;
+  display: flex;
+  font-family: "Roboto", "sans-serif";
+  font-size: 16px;
+  justify-content: space-between;
+}
+
+.receipt-total > div {
+  font-weight:700;
+  color: #24c486;
+}
