@@ -230,3 +230,14 @@ input[type="number"] {
   font-weight:700;
   color: #24c486;
 }
+
+.footer{
+  text-align: center;
+  font-family: "Roboto", "sans-serif";
+  font-size: 20px;
+  
+  margin: 15px;
+  padding: 10px;
+  font-weight:700;
+  color: #000;
+}

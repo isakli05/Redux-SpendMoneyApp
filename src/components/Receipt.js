@@ -37,7 +37,7 @@ function Receipt() {
             <div key={rc.id} className="receipt-items">
               <div className="item-name">{rc.name}</div>
               <div className="item-amount">x{rc.amount}</div>
-              <div className="item-cost">${rc.amount * rc.price}</div>
+              <div className="item-cost">${(rc.amount * rc.price)}</div>
             </div>
           ))}
           <div className="receipt-total">
